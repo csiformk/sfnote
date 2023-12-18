@@ -4,10 +4,16 @@
         <meta charset="UTF-8">
         <title>{% block title %}Notes App{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>N</text></svg>">
-
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
         <title>Notes App</title>
     </head>
     <body>
+    <header>
+<a href="/admin">Admin</a>
+    </header>
         {% block body %}{% endblock %}
+        <footer>
+        <p>- 2023- </p>
+        </footer>
     </body>
 </html>
