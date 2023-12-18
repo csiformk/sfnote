@@ -21,6 +21,7 @@ class HomeController extends AbstractController
     #[Route('/home/{id}', name: 'app_note_show', methods: ['GET'])]
     public function show(Note $note): Response
     {
+     
         return $this->render('home/show.html.twig', [
             'note' => $note,
         ]);
