@@ -7,3 +7,5 @@
 - Création d'une entité **Category** avec le champ : **libelle**
 - On effectue une migration : `symfony.exe console make:migration`
 - Ensuite migrate : `symfony.exe console doctrine:migrations:migrate`
+- Installation du **bundle** pour les **fixtures** : `composer require --dev orm-fixtures`
+- Installation de **Faker** : `composer require fakerphp/faker`
