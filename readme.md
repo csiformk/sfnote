@@ -9,3 +9,5 @@
 - Ensuite migrate : `symfony.exe console doctrine:migrations:migrate`
 - Installation du **bundle** pour les **fixtures** : `composer require --dev orm-fixtures`
 - Installation de **Faker** : `composer require fakerphp/faker`
+- Ajout de classe de fixture : `symfony console make:fixtures`
+- On charge les fixtures : `symfony console doctrine:fixtures:load` ou `symfony console doctrine:fixtures:load --append`
