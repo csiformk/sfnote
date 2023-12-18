@@ -61,4 +61,13 @@ class DashboardController extends AbstractDashboardController
             ]
         );
     }
+
+    public function configureCrud(): Crud
+    {
+        return Crud::new()
+        ->setDefaultSort(['id' => 'DESC'])
+        ->setPaginatorPageSize(10)
+        ->setPaginatorRangeSize(2)
+        ;
+    }
 }

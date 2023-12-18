@@ -29,13 +29,4 @@ class NoteCrudController extends AbstractCrudController
         ];
     }
     
-
-    public function configureCrud(Crud $crud): Crud
-    {
-        return $crud
-        ->setDefaultSort(['id' => 'DESC'])
-        ->setPaginatorPageSize(10)
-        ->setPaginatorRangeSize(2)
-        ;
-    }
 }
