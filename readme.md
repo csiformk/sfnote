@@ -17,3 +17,5 @@
 - Relation entités : [https://community.mis.temple.edu/mis3506digitaldesignfall2018/files/2018/10/Adam-Alalouf_Cardinality.pdf](https://community.mis.temple.edu/mis3506digitaldesignfall2018/files/2018/10/Adam-Alalouf_Cardinality.pdf)
 
 - Installation de **easyadmin** : `composer require easycorp/easyadmin-bundle`
+- Ajout d'un dashboard: `symfony console make:admin:dashboard`
+- Création de **crud** par **easyadmin** : `symfony console make:admin:crud`
