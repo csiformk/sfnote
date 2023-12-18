@@ -1,5 +1,7 @@
 # Symfony Note App
 
+## Mise en route de l'application
+
 - Cloner ce dépôt
 - Ensuite installer les dépandances : `composer install` , si vous avez cette erreur ` The openssl extension is required for SSL/TLS protection but is not availab  
   le. If you can not enable the openssl extension, you can disable this error  
@@ -8,6 +10,8 @@
 - Copy **.env** en **.env.local**
 - Utilisation d'une base de donnée sqlite nommée **note.db**
 - Création de la base de donnée ` symfony console doctrine:database:create`
+
+## Mode operatoire de création de l'application :
 
 - Création d'une entité **Note** avec les champs : **title,content** `symfony console make:entity`
 - Création d'une entité **Category** avec le champ : **libelle**

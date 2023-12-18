@@ -36,6 +36,14 @@ class NoteRepository extends ServiceEntityRepository
 //        ;
 //    }
 
+/*
+SELECT * FROM note
+JOIN note_category
+ON note.id = note_category.note_id
+JOIN category
+ON category.id = note_category.category_id 
+*/
+
 //    public function findOneBySomeField($value): ?Note
 //    {
 //        return $this->createQueryBuilder('n')
