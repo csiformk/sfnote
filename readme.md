@@ -11,3 +11,4 @@
 - Installation de **Faker** : `composer require fakerphp/faker`
 - Ajout de classe de fixture : `symfony console make:fixtures`
 - On charge les fixtures : `symfony console doctrine:fixtures:load` ou `symfony console doctrine:fixtures:load --append`
+- Relation entités : [https://community.mis.temple.edu/mis3506digitaldesignfall2018/files/2018/10/Adam-Alalouf_Cardinality.pdf](https://community.mis.temple.edu/mis3506digitaldesignfall2018/files/2018/10/Adam-Alalouf_Cardinality.pdf)
