@@ -4,6 +4,6 @@
 {% block body %}
 <h1>Notes</h1>
 {% for note in notes %}
-    <h3><a href="{{ path('app_note_show', {id: note.id}) }}">{{ note.title }}</a></h3>
+    <h3><a href="{{ path('note', {id: note.id}) }}">{{ note.title }}</a></h3>
 {% endfor %}
 {% endblock %}

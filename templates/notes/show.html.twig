@@ -2,8 +2,6 @@
 
 {% block body %}
 
-
-
 <section>
     <h3>{{ note.title }}</h3>
 
@@ -16,7 +14,7 @@
         {% endfor %}
     {% endif %}
     </p>
-    <p><a href="{{ path('app_home') }}">Retour liste des notes</a></p>
+    <p><a href="{{ path('notes') }}">Retour liste des notes</a></p>
 </section>    
     
 {% endblock %}

@@ -21,22 +21,37 @@ class NoteRepository extends ServiceEntityRepository
         parent::__construct($registry, Note::class);
     }
 
-//    /**
-//     * @return Note[] Returns an array of Note objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('n')
-//            ->andWhere('n.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('n.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    /**
+     * @return Note[] Returns an array of Note objects
+     */
+    public function findByTitle($value): array
+    {
+        return $this->createQueryBuilder('n')
+                   ->andWhere('n.title LIKE :val')
+                   ->setParameter('val', '%' . $value . '%')
+                   ->orderBy('n.id', 'ASC')
+                //    ->setMaxResults(10)
+                   ->getQuery()
+                   ->getResult()
+        ;
+    }
 
-/*
+    //    /**
+    //     * @return Note[] Returns an array of Note objects
+    //     */
+    //    public function findByExampleField($value): array
+    //    {
+    //        return $this->createQueryBuilder('n')
+    //            ->andWhere('n.exampleField = :val')
+    //            ->setParameter('val', $value)
+    //            ->orderBy('n.id', 'ASC')
+    //            ->setMaxResults(10)
+    //            ->getQuery()
+    //            ->getResult()
+    //        ;
+    //    }
+
+    /*
 SELECT * FROM note
 JOIN note_category
 ON note.id = note_category.note_id
@@ -44,13 +59,13 @@ JOIN category
 ON category.id = note_category.category_id 
 */
 
-//    public function findOneBySomeField($value): ?Note
-//    {
-//        return $this->createQueryBuilder('n')
-//            ->andWhere('n.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+    //    public function findOneBySomeField($value): ?Note
+    //    {
+    //        return $this->createQueryBuilder('n')
+    //            ->andWhere('n.exampleField = :val')
+    //            ->setParameter('val', $value)
+    //            ->getQuery()
+    //            ->getOneOrNullResult()
+    //        ;
+    //    }
 }
